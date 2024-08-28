@@ -1,0 +1,47 @@
+/* common codes start */
+:root {
+    --light-color: #fff;
+    --dark-color: #040404;
+    --primary-color: #51B56D;
+    --text-color: #888888;
+
+}
+
+@font-face {
+    font-family: RubikR;
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+
+.text-rubik {
+    font-family: RubikR;
+}
+
+.btn {
+    border: 0;
+}
+
+.btn-primary {
+    background: #51B56D;
+    color: #fff;
+    border-color: #51B56D;
+}
+
+.btn-outline-primary {
+    background: #e0f2e5;
+    color: #3f9457;
+}
+
+/* common codes end */
+
+
+/* navbar section start */
+#navbar .nav-link {
+    color: var(--dark-color);
+    font-weight: 600;
+}
+
+#navbar .nav-btn a {
+    font-weight: 600;
+}
+
+/* navbar section end */
