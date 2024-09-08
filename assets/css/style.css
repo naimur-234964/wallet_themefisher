@@ -3,6 +3,7 @@
     --light-color: #fff;
     --dark-color: #040404;
     --primary-color: #51B56D;
+    --secondary-color: #386b44;
     --text-color: #888888;
 
 }
@@ -24,11 +25,13 @@
     background: #51B56D;
     color: #fff;
     border-color: #51B56D;
+    transition: .5s linear;
 }
 
 .btn-outline-primary {
     background: #e0f2e5;
     color: #3f9457;
+    transition: .5s linear;
 }
 
 /* common codes end */
@@ -38,10 +41,76 @@
 #navbar .nav-link {
     color: var(--dark-color);
     font-weight: 600;
+    margin: 0 20px;
+}
+
+#navbar .nav-item {
+    position: relative;
+    transition: .3s ease-in-out;
+
+    &::after {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 2px;
+        content: "";
+        background-color: var(--primary-color);
+        transition: .3s ease-in-out;
+    }
+
+    &:hover {
+        & .nav-link {
+            color: var(--primary-color);
+        }
+
+        &::after {
+            width: 100%;
+        }
+    }
 }
 
 #navbar .nav-btn a {
     font-weight: 600;
 }
 
+#navbar {
+
+    & .btn-primary,
+    & .btn-outline-primary {
+        transition: .5s;
+    }
+
+    & .btn-primary:hover {
+        background: var(--secondary-color);
+    }
+
+    & .btn-outline-primary:hover {
+        background: var(--primary-color);
+
+    }
+}
+
+/* Ensures the dropdown is hidden by default */
+.nav-item.dropdown .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Shows the dropdown menu on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+
+    & .dropdown-item:hover {
+        color: var(--primary-color);
+    }
+}
+
+#navbar .dropdown-item {
+    font-weight: 600;
+    padding: 5px 0;
+}
 /* navbar section end */
