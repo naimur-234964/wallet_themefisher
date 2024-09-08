@@ -13,8 +13,17 @@
     src: url(../fonts/Rubik-Regular.ttf);
 }
 
+@font-face {
+    font-family: RubikB;
+    src: url(../fonts/Rubik-Bold.ttf);
+}
+
 .text-rubik {
     font-family: RubikR;
+}
+
+.text-rubikb {
+    font-family: RubikB;
 }
 
 .btn {
@@ -32,6 +41,15 @@
     background: #e0f2e5;
     color: #3f9457;
     transition: .5s linear;
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary-color);
+
 }
 
 /* common codes end */
@@ -75,22 +93,6 @@
     font-weight: 600;
 }
 
-#navbar {
-
-    & .btn-primary,
-    & .btn-outline-primary {
-        transition: .5s;
-    }
-
-    & .btn-primary:hover {
-        background: var(--secondary-color);
-    }
-
-    & .btn-outline-primary:hover {
-        background: var(--primary-color);
-
-    }
-}
 
 /* Ensures the dropdown is hidden by default */
 .nav-item.dropdown .dropdown-menu {
@@ -113,4 +115,24 @@
     font-weight: 600;
     padding: 5px 0;
 }
+
 /* navbar section end */
+
+/* header section start */
+#header {
+    & .title {
+        & h1 {
+            color: var(--dark-color);
+        }
+
+        & p {
+            color: var(--text-color);
+        }
+
+        & a {
+           font-weight: 600;
+        }
+    }
+}
+
+/* header section end */
