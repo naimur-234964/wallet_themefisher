@@ -61,9 +61,16 @@
 
 .btn-outline-primary:hover {
     background: var(--primary-color);
-
+    
 }
 
+.shadow-lg-hover {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.shadow-lg-hover:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
 /* common codes end */
 
 
@@ -178,13 +185,6 @@
             background-color: rgba(145, 122, 235, 0.2);
         }
     }
-}
-.shadow-lg-hover {
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.shadow-lg-hover:hover {
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 
