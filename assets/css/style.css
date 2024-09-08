@@ -61,7 +61,7 @@
 
 .btn-outline-primary:hover {
     background: var(--primary-color);
-    
+
 }
 
 .shadow-lg-hover {
@@ -71,6 +71,11 @@
 .shadow-lg-hover:hover {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
+
+.bg-subtle {
+    background-color: rgba(226, 227, 229, .2);
+}
+
 /* common codes end */
 
 
@@ -160,15 +165,17 @@
 .service-content {
     border: 1px solid rgba(0, 0, 0, .1);
     padding: 30px 50px;
-    
-    & h1{
+
+    & h1 {
         transition: .3s ease-in-out;
     }
+
     &:hover {
-        & h1{
+        & h1 {
             color: var(--primary-color);
         }
     }
+
     & span {
         display: inline-block;
         height: 70px;
@@ -189,3 +196,39 @@
 
 
 /* service section end */
+
+/* difference section start */
+.difference-content {
+    background-color: transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: none;
+
+    &:hover {
+        background-color: #ffffff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    & i {
+        display: inline-block;
+        color: var(--primary-color);
+        padding: 20px;
+        border-radius: 8px;
+        background-color: rgba(81, 181, 109, 0.2);
+    }
+
+    &:nth-child(odd) {
+
+        & i {
+            color: #917AEB;
+            background-color: rgba(145, 122, 235, 0.2);
+        }
+    }
+
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+}
+/* difference section end */
