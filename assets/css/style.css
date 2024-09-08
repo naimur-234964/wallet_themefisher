@@ -26,6 +26,18 @@
     font-family: RubikB;
 }
 
+.dark-text {
+    color: var(--dark-color);
+}
+
+.primary-text {
+    color: var(--primary-color);
+}
+
+.text-text {
+    color: var(--text-color);
+}
+
 .btn {
     border: 0;
 }
@@ -130,9 +142,50 @@
         }
 
         & a {
-           font-weight: 600;
+            font-weight: 600;
         }
     }
 }
 
 /* header section end */
+
+/* service section start */
+.service-content {
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 30px 50px;
+    
+    & h1{
+        transition: .3s ease-in-out;
+    }
+    &:hover {
+        & h1{
+            color: var(--primary-color);
+        }
+    }
+    & span {
+        display: inline-block;
+        height: 70px;
+        width: 70px;
+        line-height: 70px;
+        border-radius: 8px;
+        background-color: rgba(81, 181, 109, 0.2);
+    }
+
+    &:nth-child(even) {
+
+        & span {
+            color: #917AEB;
+            background-color: rgba(145, 122, 235, 0.2);
+        }
+    }
+}
+.shadow-lg-hover {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.shadow-lg-hover:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+
+/* service section end */
