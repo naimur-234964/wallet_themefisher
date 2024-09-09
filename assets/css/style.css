@@ -267,3 +267,21 @@
 }
 
 /* difference-navTabs section end */
+
+/* feedback section start */
+#feedback{
+    .card{
+        border: none;
+
+        & p{
+            margin: 0;
+        }
+
+        & a{
+            text-decoration: none;
+            color: var(--primary-color);
+            border-bottom: 1px dotted #51B56D;
+        }
+    }
+}
+/* feedback section end */
