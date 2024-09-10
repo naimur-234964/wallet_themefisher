@@ -236,31 +236,32 @@
 
 /* difference-navTabs section start */
 #difference-navTabs {
-    .container{
+    .container {
         background: linear-gradient(to bottom, rgba(226, 227, 229, 0.2) 60%, var(--light-color) 60%);
     }
+
     .nav-item {
         padding: 0 20px;
     }
-    
+
     .nav-link {
         padding: 10px 20px;
         color: #233242;
         font-weight: 600;
         transition: .3s linear;
-        
+
         &:hover {
             color: var(--primary-color);
             background: rgba(81, 181, 109, .2);
         }
-        
+
         &.active {
             color: var(--light-color);
             background: var(--primary-color);
         }
     }
-    
-    .tab-content{
+
+    .tab-content {
         background: var(--light-color);
         border-radius: 8px;
     }
@@ -269,21 +270,22 @@
 /* difference-navTabs section end */
 
 /* feedback section start */
-#feedback{
-    .card{
+#feedback {
+    .card {
         border: none;
 
-        & p{
+        & p {
             margin: 0;
         }
 
-        & a{
+        & a {
             text-decoration: none;
             color: var(--primary-color);
             border-bottom: 1px dotted #51B56D;
         }
     }
 }
+
 /* feedback section end */
 
 /* faq section start */
@@ -303,5 +305,16 @@
         border: none;
         line-height: 1.5;
     }
+
+    .contact {
+
+        & a {
+            text-decoration: none;
+            color: var(--primary-color);
+            border-bottom: 1px dotted #51B56D;
+        }
+
+    }
 }
+
 /* faq section end */
