@@ -346,3 +346,11 @@
 }
 
 /* big footer end */
+
+/* footer start */
+#footer {
+    i{
+        color: var(--dark-color);
+    }
+}
+/* footer end */
