@@ -321,7 +321,7 @@
 
 /* big footer start */
 #big_footer {
-    h5{
+    h5 {
         font-weight: 600;
     }
 
@@ -329,17 +329,17 @@
         color: var(--dark-color);
         text-decoration: none;
         transition: .2s;
-        
-        &:hover{
+
+        &:hover {
             color: var(--primary-color);
             text-decoration: underline;
         }
     }
 
-    .newsletter{
+    .newsletter {
         background-color: rgba(226, 227, 229, .5);
 
-        .input-group-text{
+        .input-group-text {
             background: var(--primary-color);
         }
     }
@@ -349,8 +349,22 @@
 
 /* footer start */
 #footer {
-    i{
-        color: var(--dark-color);
+    .footer-link {
+        a {
+            text-decoration: none;
+            
+            &:hover{
+                i {
+                    color: var(--primary-color);
+                }
+            }
+        }
+        
+        i {
+            color: var(--dark-color);
+            transition: .3s;
+        }
     }
 }
+
 /* footer end */
