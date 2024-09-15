@@ -336,6 +336,13 @@
         }
     }
 
+    .newsletter{
+        background-color: rgba(226, 227, 229, .5);
+
+        .input-group-text{
+            background: var(--primary-color);
+        }
+    }
 }
 
 /* big footer end */
