@@ -318,3 +318,24 @@
 }
 
 /* faq section end */
+
+/* big footer start */
+#big_footer {
+    h5{
+        font-weight: 600;
+    }
+
+    ul li a {
+        color: var(--dark-color);
+        text-decoration: none;
+        transition: .2s;
+        
+        &:hover{
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+    }
+
+}
+
+/* big footer end */
