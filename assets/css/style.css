@@ -352,17 +352,29 @@
     .footer-link {
         a {
             text-decoration: none;
-            
-            &:hover{
+
+            &:hover {
                 i {
                     color: var(--primary-color);
                 }
             }
         }
-        
+
         i {
             color: var(--dark-color);
             transition: .3s;
+        }
+    }
+
+    .footer-nav {
+        a {
+            text-decoration: none;
+            color: var(--dark-color);
+            transition: .3s;
+
+            &:hover {
+                color: var(--primary-color);
+            }
         }
     }
 }
