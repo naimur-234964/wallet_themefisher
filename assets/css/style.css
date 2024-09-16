@@ -47,29 +47,28 @@
     color: #fff;
     border-color: #51B56D;
     transition: .5s linear;
+
+    &:hover {
+        background: var(--secondary-color);
+    }
 }
 
 .btn-outline-primary {
     background: #e0f2e5;
     color: #3f9457;
     transition: .5s linear;
-}
 
-.btn-primary:hover {
-    background: var(--secondary-color);
-}
-
-.btn-outline-primary:hover {
-    background: var(--primary-color);
-
+    &:hover {
+        background: var(--primary-color);
+    }
 }
 
 .shadow-lg-hover {
     transition: box-shadow 0.3s ease-in-out;
-}
 
-.shadow-lg-hover:hover {
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    &:hover {
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    }
 }
 
 .bg-subtle {
