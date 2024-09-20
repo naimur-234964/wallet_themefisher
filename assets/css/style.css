@@ -81,7 +81,7 @@
 
 /* navbar section start */
 #navbar{
-    
+    background: rgba(237, 237, 237, .3);
 }
 #navbar .nav-link {
     color: var(--dark-color);
