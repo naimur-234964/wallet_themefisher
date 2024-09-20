@@ -47,29 +47,28 @@
     color: #fff;
     border-color: #51B56D;
     transition: .5s linear;
+
+    &:hover {
+        background: var(--secondary-color);
+    }
 }
 
 .btn-outline-primary {
     background: #e0f2e5;
     color: #3f9457;
     transition: .5s linear;
-}
 
-.btn-primary:hover {
-    background: var(--secondary-color);
-}
-
-.btn-outline-primary:hover {
-    background: var(--primary-color);
-
+    &:hover {
+        background: var(--primary-color);
+    }
 }
 
 .shadow-lg-hover {
     transition: box-shadow 0.3s ease-in-out;
-}
 
-.shadow-lg-hover:hover {
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    &:hover {
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    }
 }
 
 .bg-subtle {
@@ -322,3 +321,65 @@
 }
 
 /* faq section end */
+
+/* big footer start */
+#big_footer {
+    h5 {
+        font-weight: 600;
+    }
+
+    ul li a {
+        color: var(--dark-color);
+        text-decoration: none;
+        transition: .2s;
+
+        &:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+    }
+
+    .newsletter {
+        background-color: rgba(226, 227, 229, .5);
+
+        .input-group-text {
+            background: var(--primary-color);
+        }
+    }
+}
+
+/* big footer end */
+
+/* footer start */
+#footer {
+    .footer-link {
+        a {
+            text-decoration: none;
+
+            &:hover {
+                i {
+                    color: var(--primary-color);
+                }
+            }
+        }
+
+        i {
+            color: var(--dark-color);
+            transition: .3s;
+        }
+    }
+
+    .footer-nav {
+        a {
+            text-decoration: none;
+            color: var(--dark-color);
+            transition: .3s;
+
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+}
+
+/* footer end */
